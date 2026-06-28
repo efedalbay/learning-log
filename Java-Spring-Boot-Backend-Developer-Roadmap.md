@@ -155,8 +155,8 @@ v2'den itibaren her modül, mevcut kapanış başlıklarına (Kazanılan Yetenek
 Aşağıdaki liste, programın tamamını gösterir. Tamamladığın modülleri işaretleyerek bunu kendi ilerleme takip aracın olarak kullanabilirsin. **🔵 işaretli modüller bu dokümanda zaten tam detaylı; diğerleri sıradaki bölümlerde detaylandırılacak.**
 
 ### FAZ 0 — Ortam ve Git Temelleri
-- [ ] 🔵 0.1 — Geliştirme Ortamı Kurulumu
-- [ ] 🔵 0.2 — Git ve GitHub Temelleri
+- [x] 🔵 0.1 — Geliştirme Ortamı Kurulumu
+- [x] 🔵 0.2 — Git ve GitHub Temelleri
 
 ### FAZ 1 — Java Temelleri
 - [ ] 🔵 1.1 — Söz Dizimi ve Temel Yapılar
