@@ -4,7 +4,7 @@
 >
 > **Kapsam:** terminal komutları, git komutları, kavramlar (JDK/JVM gibi), araçlar. Kodun kendisi ve syntax açıklamaları burada değil — onları kendi `.java` dosyalarımda açıklama satırlarıyla tutuyorum.
 >
-> **Son güncelleme:** Faz 0 + Modül 1.1 başlangıcı (kavramlar)
+> **Son güncelleme:** Faz 0 + Modül 1.1 (değişkenler, isimlendirme kuralları)
 
 ---
 
@@ -97,6 +97,19 @@ SSH = GitHub'a her seferinde şifre girmeden güvenli bağlanmamı sağlayan yö
 | **`java`** | Java çalıştırıcı komutu (derlenmiş programı çalıştırır). |
 
 > 📝 **Not:** Kodun *syntax* açıklamaları (örn. `println` ne yapar, `;` nereye konur, `class`/`main` ne demek) bu sözlükte değil, kendi `.java` dosyalarımda açıklama (comment) satırları olarak yaşıyor. Bu sözlük sadece **kavramları** tutar; kod ve kod açıklamaları repodaki Java dosyalarında.
+
+### İsimlendirme Kuralları (Naming Conventions)
+Java'da isimler belli bir geleneğe göre yazılır. Kod *çalışır* ama bu kurallara uymak profesyonellik göstergesidir (işe alımda fark eder).
+
+| Kural | Nasıl yazılır | Nerede kullanılır | Örnek |
+|-------|---------------|-------------------|-------|
+| **camelCase** | İlk kelime küçük, sonraki kelimeler büyük başlar | Değişken ve metot isimleri | `ogrenciNotu`, `aracHizi`, `hesaplaToplam()` |
+| **PascalCase** | Her kelime büyük başlar (UpperCamelCase) | Class isimleri | `OgrenciKaydi`, `Main`, `Variables` |
+
+> Kural özeti: **değişken/metot → küçük harfle başla** (`int sayi`), **class → büyük harfle başla** (`class Sayi`).
+> Ek ipucu: İsimlendirmede tek dil seç (hep Türkçe ya da hep İngilizce), karıştırma. Profesyonel projeler genelde İngilizce gider.
+
+
 
 ---
 
