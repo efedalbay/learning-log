@@ -4,7 +4,7 @@
 >
 > **Kapsam:** terminal komutları, git komutları, kavramlar (JDK/JVM gibi), araçlar. Kodun kendisi ve syntax açıklamaları burada değil — onları kendi `.java` dosyalarımda açıklama satırlarıyla tutuyorum.
 >
-> **Son güncelleme:** Faz 0 + Modül 1.1 (değişkenler, isimlendirme kuralları)
+> **Son güncelleme:** Faz 0 + Modül 1.1 (değişkenler, isimlendirme kuralları, primitive vs reference tipler)
 
 ---
 
@@ -109,7 +109,15 @@ Java'da isimler belli bir geleneğe göre yazılır. Kod *çalışır* ama bu ku
 > Kural özeti: **değişken/metot → küçük harfle başla** (`int sayi`), **class → büyük harfle başla** (`class Sayi`).
 > Ek ipucu: İsimlendirmede tek dil seç (hep Türkçe ya da hep İngilizce), karıştırma. Profesyonel projeler genelde İngilizce gider.
 
+### Primitive Tipler vs Reference (Referans) Tipler
+Java'da iki temel tip kategorisi var — **`String` neden büyük harfle başlıyor** sorusunun cevabı da burada:
 
+| Kategori | Örnekler | Yazım | Ne olduğu |
+|----------|----------|-------|-----------|
+| **Primitive (ilkel)** | `int`, `double`, `char`, `boolean`, `byte`, `short`, `long`, `float` | küçük harf, dilin **anahtar kelimesi** | Class değil — dile gömülü en temel veri birimleri |
+| **Reference (referans)** | `String`, `Integer`, `ArrayList`, ve yazdığım her class | **büyük harf**, PascalCase | Gerçek class'lar (`java.lang` paketinden ya da kendi yazdığım) |
+
+> **`String` aslında bir class** (`java.lang.String`) — benim `public class Operators` yazmam ile aynı mantık. Java ona özel muamele yapıp tırnakla yazmama ve `+` ile birleştirmeme izin veriyor (operator overloading), ama arka planda gerçek bir nesne. İleride `Integer`, `Double` gibi primitive'lerin "wrapper class" (sarmalayıcı) karşılıklarını göreceğim — aynı mantığın devamı.
 
 ---
 
